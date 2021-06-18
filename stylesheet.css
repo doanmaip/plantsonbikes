@@ -1,4 +1,9 @@
    @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+   @font-face {
+       font-family: "Plus Jakarta Display", sans-serif;
+       src: url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.cs") format('svg');
+   }
+   
    * {
        scroll-behavior: smooth;
    }

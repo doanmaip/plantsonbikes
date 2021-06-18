@@ -250,7 +250,6 @@
    
    .price {
        color: white;
-       margin-bottom: 15px;
        font-size: 18px;
        font-weight: 300 !important;
    }
@@ -267,7 +266,6 @@
    
    img[alt="arrow-right"] {
        height: 20px;
-       align-items: flex-end;
    }
    
    .center {
@@ -300,6 +298,19 @@
        margin: auto;
        padding-top: 9%;
        padding-bottom: 5%;
+   }
+   
+   hr {
+       margin: 70px 0px 40px 0px;
+       color: white;
+   }
+   
+   .value {
+       font-size: 30px;
+       font-weight: 500 !important;
+       line-height: 45px;
+       margin-bottom: 4%;
+       font-family: "Plus Jakarta Display", sans-serif !important;
    }
    
    .list {

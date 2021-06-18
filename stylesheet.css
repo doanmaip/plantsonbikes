@@ -9,7 +9,7 @@
        letter-spacing: 0.5px;
        color: #1D263A;
        margin: auto;
-       margin-top: 40px !important;
+       margin-top: 60px !important;
    }
    
    p {
@@ -20,7 +20,7 @@
    h1 {
        font-size: 50px;
        font-weight: 600;
-       margin-bottom: 30px;
+       margin-bottom: 8%;
        line-height: 65px;
    }
    
@@ -28,7 +28,7 @@
        font-size: 30px;
        font-style: bold;
        line-height: 45px;
-       margin-bottom: 30px;
+       margin-bottom: 9%;
    }
    
    h3 {
@@ -54,7 +54,8 @@
        font-size: 13px;
        position: relative;
        text-align: center;
-       margin-bottom: 30px;
+       margin-bottom: 6%;
+       margin-top: 6%;
    }
    
    .preheadline::before {
@@ -85,7 +86,7 @@
    
    .btn-primary {
        position: relative;
-       margin: 20px 20px 0px 0px !important;
+       margin: 9% 0% 9% 0% !important;
        background: #5e7c46;
        border: 2px solid white !important;
        padding: 15px 30px;
@@ -108,7 +109,7 @@
    
    .btn-secondary {
        position: relative;
-       margin: 20px 20px 0px 0px !important;
+       margin: 9% 0% 9% 0% !important;
        background: white;
        border: 2px solid #5e7c46 !important;
        padding: 15px 30px;
@@ -143,8 +144,8 @@
    /* HEADER */
    
    .container {
-       margin-top: 60px !important;
-       padding: 10px 10px 100px 100px !important;
+       margin-top: 3% !important;
+       padding: 60px 6% 6% 6% !important;
        background-color: #F7F8F5;
        border-radius: 30px;
        width: 100%;
@@ -163,7 +164,7 @@
    }
    
    img[alt="feature"] {
-       margin-right: 20px;
+       margin-right: 3%;
        color: transparent;
    }
    
@@ -283,22 +284,6 @@
    .copy-image p {
        opacity: 100% !important;
    }
-   /* .about-us {
-           margin-top: 150px;
-           background-color: #5e7c46;
-           padding: 50px;
-           color: white;
-           margin: auto;
-           border-radius: 10px;
-       }
-       
-       .about-us p {
-           opacity: 100% !important;
-       }
-       
-       .about-us img {
-           background-size: cover;
-       } */
    
    .how-we-work {
        max-width: 1200px;
@@ -312,12 +297,6 @@
    }
    
    img[alt="funktion"] {
-       border-radius: 10px;
-   }
-   
-   .container-img {
-       height: 50px;
-       object-fit: cover;
        border-radius: 10px;
    }
    
@@ -387,8 +366,15 @@
        text-align: right;
    }
    /* MEDIA QUERIES*/
-   /* @media (max-width: 800px) {
-           .container {
-               flex-direction: column;
-           }
-       } */
+   
+   @media (max-width: 800px) {
+       section {
+           padding: 6%;
+       }
+       img {
+           padding: 3% 0% 3% 0%;
+       }
+       img[alt="logo-footer"] {
+           height: 80%;
+       }
+   }

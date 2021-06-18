@@ -148,7 +148,7 @@
    
    .container {
        margin-top: 3% !important;
-       padding: 60px 6% 6% 6% !important;
+       padding: 40px 6% 40px 6% !important;
        background-color: #F7F8F5;
        border-radius: 30px;
        width: 100%;
@@ -397,6 +397,9 @@
        }
        img {
            padding: 3% 0% 3% 0%;
+       }
+       .insta-row-2 {
+           display: none;
        }
    }
    

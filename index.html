@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="img/png" href="Assets/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>PlantsOnBikes - Deine nachhaltige Pflanzenlieferung</title>
+    <link rel="stylesheet" href="carousel-03/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="carousel-03/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="carousel-03/css/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
 
     <div>
-        <a href="#"><img src="Assets/PlantsOnBikes_logo.svg" alt="PlantsOnBikes-Logo"></a>
+        <a href="#"><img src="Assets/PlantsOnBikes_logo.png" alt="PlantsOnBikes-Logo"></a>
     </div>
     <section data-aos="fade-up" data-aos-delay="100" class="hero">
         <div class="container col-xxl-8 px-4 py-5">
@@ -39,7 +43,7 @@
                     <div class="col-md-9 ">
                         <p> „Tolles Konzept für alle nachhaltigen Pflanzenliebhaber*innen“</p>
                         <div>
-                            <img src="Assets/stars rating.svg" alt="stars" height="20px">
+                            <img src="Assets/stars rating.svg" alt="stars">
                         </div>
                     </div>
                 </div>
@@ -97,7 +101,7 @@
                         <p> <b>Inspiriert von Outdoor-Fahrrad-Verkäufen auf den Straßen Vietnams</b>, bringen wir euch eure Lieblingspflanze sogar bis vor die Tür - <b> aber nachhaltig!</b> <br> <br>In Zeiten einer Pandemie, boomt das Online-Shopping Geschäft
                             ohnehin schon. Hierbei vergessen viele Käufer*innen schnell den CO2 Ausstoß, der durch den Versand aus der ganzen Welt verursacht wird. Hinzu kommen auch noch Unmengen von daraus entstehendem Verpackungsmüll.<br> <br> Wir von
                             <b> PlantsOnBikes
-                            züchten unsere Pflanzen nachhaltig und in der Region.</b> Durch unsere persönliche und standortgebundene Beratung helfen wir dir, deine neue(n) Lieblingspflanze(n) zu finden. Dafür <b> liefern wir dir auf unseren schnellsten Rädern
+                            züchten unsere Pflanzen nachhaltig und in der Region.</b> Durch unsere persönliche und standortgebundene Beratung helfen wir dir, deine neue(n) Lieblingspflanze(n) zu finden. Dafür <b> liefern wir auf unseren schnellsten Rädern
                             und ohne viel Müll drumherum!</b></p>
                     </div>
                 </div>
@@ -106,19 +110,19 @@
         </section>
 
         <section data-aos="fade-up" data-aos-delay="300" class="topseller">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-11">
                     <h2>Entdecke unsere Topseller</h2>
                 </div>
                 <div class="col-md-1 flex-nowrap">
-                    <!-- Controls -->
+                    Controls
                     <div class="controls pull-right hidden-xs">
                         <a href="#carousel-example" data-slide="prev"></a><img src="Assets/arrow-left.svg"></a>
                         <a href="#carousel-example" data-slide="next"><img src="Assets/arrow-right.svg"></a>
                     </div>
                 </div>
                 <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
-                    <!-- Wrapper for slides -->
+                    Wrapper for slides
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
@@ -185,9 +189,90 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <button class="btn-primary center">Zum Online-Shop</button>
-            </div>
+            <div> -->
+            <div class="row">
+                <div class="col-md-11">
+                    <h2>Entdecke unsere Topseller</h2>
+                </div>
+                <div class="container-carsl">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="featured-carousel owl-carousel">
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center" style="background-image: url(Assets/plant1.jpg);">
+                                            <div class="text w-100">
+                                                <span class="cat">Calathea</span>
+                                                <h3><a href="#">Triostar</a></h3>
+                                                <div class="row">
+                                                    <h2 class="price col-md-6"> € 15,95 </h2>
+                                                    <img class="col-md-6" src="Assets/arrow-right-white.svg" alt="arrow-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center" style="background-image: url(Assets/plant2.jpg);">
+                                            <div class="text w-100">
+                                                <span class="cat">alocasia</span>
+                                                <h3><a href="#">Wentii</a></h3>
+                                                <div class="row">
+                                                    <h2 class="price col-md-6"> € 15,95</h2>
+                                                    <img class="col-md-6" src="Assets/arrow-right-white.svg" alt="arrow-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center" style="background-image: url(Assets/plant6.jpg);">
+                                            <div class="text w-100">
+                                                <span class="cat">Calathea</span>
+                                                <h3><a href="#">Baby Makoyana</a></h3>
+                                                <div class="row">
+                                                    <h2 class="price col-md-6"> € 5,45 </h2>
+                                                    <img class="col-md-6" src="Assets/arrow-right-white.svg" alt="arrow-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center" style="background-image: url(Assets/plant5.jpg);">
+                                            <div class="text w-100">
+                                                <span class="cat">Rhaphidophora</span>
+                                                <h3><a href="#">Tetrasperma</a></h3>
+                                                <div class="row">
+                                                    <h2 class="price col-md-6"> € 11,95 </h2>
+                                                    <img class="col-md-6" src="Assets/arrow-right-white.svg" alt="arrow-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-end justify-content-center" style="background-image: url(Assets/plant4.jpg);">
+                                            <div class="text w-100">
+                                                <span class="cat">Philodendron</span>
+                                                <h3><a href="#">Birkin</a></h3>
+                                                <div class="row">
+                                                    <h2 class="price col-md-6"> € 8,95 </h2>
+                                                    <img class="col-md-6" src="Assets/arrow-right-white.svg" alt="arrow-right">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary center">Zum Online-Shop</button>
+                </div>
         </section>
 
         <section data-aos="fade-up" data-aos-delay="300" class="usp">
@@ -291,36 +376,36 @@
             </div>
 
         </section>
-    </div>
-    <footer class="text-sm-center">
-
-        <div class="footer-banner row justify-content-between">
-            <div class="col-md-4 align-self-center justify-content-center">
-                <h2> Bestelle deine Pflanzen jetzt umweltfreundlich!</h2>
-            </div>
-            <div class="col-md-4 align-self-center">
-                <p>Sei ein Teil unserer Revolution und bestelle bei uns deine neuen Pflanzen auf nachhaltigem Weg.</p>
-            </div>
-            <div class="col-md-4 col-auto"><button class=" btn-primary ">Zum Online-Shop</button></div>
         </div>
+        <footer class="text-sm-center">
+
+            <div class="footer-banner row justify-content-between">
+                <div class="col-md-4 align-self-center justify-content-center">
+                    <h2> Bestelle deine Pflanzen jetzt umweltfreundlich!</h2>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <p>Sei ein Teil unserer Revolution und bestelle bei uns deine neuen Pflanzen auf nachhaltigem Weg.</p>
+                </div>
+                <div class="col-md-4 col-auto"><button class=" btn-primary ">Zum Online-Shop</button></div>
+            </div>
 
 
-        <div class="credits row ">
-            <div class="col-md-2 ">
-                <img src="Assets/PlantsOnBikes_logo.svg " alt="logo-footer" height="40%">
+            <div class="credits row ">
+                <div class="col-md-2 ">
+                    <img src="Assets/PlantsOnBikes_logo.png" alt="logo-footer">
+                </div>
+                <div class="col-md-4 ">
+                    <p>© 2021 PlantsOnBikes. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="# ">Datenschutz</a>
+                </div>
+                <div class="col-md-3 .offset-md-3">
+                    <a href="# ">Impressum</a>
+                </div>
             </div>
-            <div class="col-md-4 ">
-                <p>© 2021 PlantsOnBikes. Alle Rechte vorbehalten.</p>
-            </div>
-            <div class="col-md-3">
-                <a href="# ">Datenschutz</a>
-            </div>
-            <div class="col-md-3 .offset-md-3">
-                <a href="# ">Impressum</a>
-            </div>
-        </div>
 
-    </footer>
+        </footer>
 
 
     </div>
@@ -332,6 +417,11 @@
     <script>
         AOS.init();
     </script>
+    <script src="carousel-03/js/jquery.min.js"></script>
+    <script src="carousel-03/js/popper.js"></script>
+    <script src="carousel-03/js/bootstrap.min.js"></script>
+    <script src="carousel-03/js/owl.carousel.min.js"></script>
+    <script src="carousel-03/js/main.js"></script>
 
 </body>
 

@@ -15,6 +15,16 @@
        color: #1D263A;
        margin: auto;
        margin-top: 30px !important;
+       overflow-x: hidden;
+   }
+   
+   img {
+       font-family: "Plus Jakarta Display", sans-serif !important;
+   }
+   
+   .grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
    }
    
    p {
@@ -34,7 +44,7 @@
        font-size: 30px;
        font-weight: 500 !important;
        line-height: 45px;
-       margin-bottom: 4%;
+       margin-bottom: 30px;
        font-family: "Plus Jakarta Display", sans-serif !important;
    }
    
@@ -75,20 +85,22 @@
        letter-spacing: 0.3em;
        font-size: 13px;
        position: relative;
-       text-align: center;
-       margin-bottom: 6%;
+       text-align: left;
+       margin-bottom: 30px;
        margin-top: 6%;
+       display: flex;
    }
    
-   .preheadline::before {
-       content: '';
-       display: block;
+   .preheadline-center {
+       justify-content: center;
+   }
+   
+   .line {
        height: 3px;
        width: 50px;
-       background: #5e7c46;
-       position: absolute;
-       top: 50%;
-       left: 0px;
+       background-color: #5e7c46;
+       margin-right: 30px;
+       margin-top: 10px;
    }
    
    .uppercase {
@@ -210,20 +222,28 @@
        margin: auto;
    }
    
-   img[alt="img-vietnam"] {
-       z-index: 0;
+   .grid-blop {
+       display: grid;
+       height: fit-content;
    }
    
-   img[alt="blop"] {
-       position: absolute;
-       z-index: 5;
+   .main-image,
+   .blop {
+       grid-row: 1;
+       grid-column: 1;
+   }
+   
+   .blop {
+       align-self: flex-end;
+       margin-left: 20%;
+       margin-bottom: -15%;
    }
    
    .topseller {
        max-width: 1200px;
        margin: auto;
-       padding-top: 9%;
-       padding-bottom: 9%;
+       padding-top: 6%;
+       padding-bottom: 3%
    }
    
    .arrows {
@@ -290,6 +310,16 @@
    .center {
        display: grid;
        align-items: center;
+   }
+   /* USP */
+   
+   .max-width-container {
+       max-width: 1640px;
+       margin: auto;
+   }
+   
+   .map {
+       text-align: center;
    }
    /* ABOUT US */
    
@@ -363,11 +393,33 @@
        transition: .5s ease;
        background-color: #008CBA;
    }
+   
+   .no-margin {
+       margin: 0;
+   }
    /* FOOTER */
    
    footer {
        background-color: #F7F8F5;
        margin: auto;
+   }
+   
+   .footer-flex {
+       display: flex;
+       justify-content: space-between
+   }
+   
+   .flex {
+       display: flex;
+   }
+   
+   .flex div {
+       display: grid;
+       align-items: center;
+   }
+   
+   .flex-margin {
+       margin-right: 50px;
    }
    
    .footer-banner {
@@ -389,27 +441,18 @@
    .credits a {
        text-align: right;
    }
-   
-   img[alt="logo-footer"] {
-       width: 100%;
-   }
    /* MEDIA QUERIES*/
    
-   @media only screen and (max-width: 600px) {
-       section {
+   @media (max-width: 1230px) {
+       section,
+       .footer-flex {
            padding: 6%;
        }
-       img {
-           padding: 3% 0% 3% 0%;
+       .grid {
+           grid-template-columns: 1fr;
        }
-       .insta-row-2 {
-           display: none;
-       }
-   }
-   
-   @media only screen and (max-width: 800px) {
-       section {
-           padding: 6%;
+       .grid-image {
+           margin: auto;
        }
        img {
            padding: 3% 0% 3% 0%;
@@ -417,7 +460,20 @@
        img[alt="PlantsOnBikes-Logo"] {
            height: 40%;
        }
-       img[alt="logo-footer"] {
-           width: 70%;
+   }
+   
+   @media (max-width: 760px) {
+       .flex,
+       .flex div,
+       .footer-flex {
+           display: block;
+           text-align: left;
+       }
+   }
+   
+   @media only screen and (max-width: 600px) {
+       .insta-row-2,
+       .blop {
+           display: none;
        }
    }

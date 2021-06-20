@@ -459,6 +459,9 @@
    }
    
    @media only screen and (max-width: 600px) {
+       body {
+           overflow-x: hidden;
+       }
        .insta-row-2,
        .blop {
            display: none;

@@ -447,6 +447,9 @@
        img {
            padding: 3% 0% 3% 0%;
        }
+       .bike {
+           margin: auto;
+       }
    }
    
    @media (max-width: 760px) {
